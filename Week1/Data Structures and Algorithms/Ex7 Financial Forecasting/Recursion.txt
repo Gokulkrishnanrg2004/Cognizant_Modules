@@ -1,0 +1,3 @@
+Recursion is a coding method in which a function repeatedly invokes itself to handle smaller chunks of a problem. This process continues until it meets a stopping condition, known as the base case, which halts further calls.
+
+This technique is especially useful for problems that can be divided into smaller, self-similar tasks — for example, computing factorials, generating Fibonacci sequences, or estimating future investment value through compounded calculations.

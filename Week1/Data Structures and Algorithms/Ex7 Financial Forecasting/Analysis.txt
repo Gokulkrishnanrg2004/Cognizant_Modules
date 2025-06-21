@@ -1,0 +1,19 @@
+Time Complexity of the Recursive Approach
+The recursive solution has a time complexity of O(n), where n represents the number of years considered. Each recursive call handles one year and relies on the result from the previous year's computation.
+
+Even though the logic is simple, the function makes one recursive call per year, resulting in a linear number of calls as n increases.
+
+Improving the Recursive Method
+While the current recursion isn’t highly inefficient, it can still be enhanced through the following techniques:
+
+Use of Memoization (If Required)
+In more complex scenarios where values for the same year might be recalculated multiple times, storing results in a cache (such as an array or map) can help avoid repeated work and improve speed.
+
+Conversion to Iterative Logic
+Since the computation for each year only relies on the result from the previous year, replacing recursion with a loop can reduce memory usage. This also eliminates the overhead caused by the function call stack.
+
+Final Complexity Insight
+Time Complexity: Remains O(n), as we still compute for each year once.
+
+Space Efficiency: The iterative version is better in terms of memory, avoiding stack buildup from recursive calls.
+
