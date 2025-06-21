@@ -1,0 +1,35 @@
+Big O Notation is a mathematical concept used to describe the time and space complexity of an algorithm as a function of the input size (n). It provides an upper bound on how an algorithm’s runtime or memory usage increases with larger inputs. This abstraction helps us compare algorithms independently of hardware or execution environments and is especially useful when designing scalable systems like an inventory management application.
+
+Why Big O is Important
+It helps us evaluate and choose the most efficient algorithm for a specific task.
+
+It provides insight into how an algorithm will scale with increasing data.
+
+It removes dependency on actual execution time or hardware configurations, focusing purely on algorithmic efficiency.
+
+Inventory Operations and Their Time Complexities (Using HashMap)
+Adding a Product:
+On average, adding a new product to a HashMap takes O(1) time. This is because the key (productId) is hashed directly to a memory location. However, in rare cases of hash collisions or internal rehashing, the time complexity may degrade to O(n).
+
+Updating a Product:
+Updating a product involves fetching the product by its ID and modifying its values. The lookup and update operations both run in O(1) average time.
+
+Deleting a Product:
+Removing a product using its productId also takes O(1) time on average since the deletion occurs directly using the key.
+
+Searching for a Product by ID:
+Search in a HashMap is very efficient with O(1) average time due to direct access via keys. In worst-case hash collisions, it may degrade but such cases are rare in practical use.
+
+Displaying the Inventory:
+Displaying all products involves iterating through all entries, which takes O(n) time where n is the number of products in the inventory.
+
+Understanding Search Time Complexities
+Linear Search:
+In the best case, the element is found at the very beginning — taking O(1) time.
+In the average case, the element is somewhere in the middle, simplifying to O(n).
+In the worst case, the element is at the end or not found, requiring a complete scan — O(n).
+
+Binary Search (used on sorted data):
+In the best case, the target is the middle element — O(1) time.
+In the average and worst cases, binary search repeatedly halves the input, resulting in O(log n) time.
+

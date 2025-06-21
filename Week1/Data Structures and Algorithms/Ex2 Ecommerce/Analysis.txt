@@ -1,0 +1,35 @@
+Linear vs Binary Search: A Performance Perspective
+Linear Search
+Linear search is a simple method that checks each item in a list sequentially until it either finds the target value or reaches the end of the list. The best-case scenario occurs when the target is at the first position, resulting in a time complexity of O(1). However, in typical situations, the element may appear toward the middle or end of the list, leading to average and worst-case complexities of O(n), where n is the total number of elements.
+
+One key advantage of linear search is that it doesn’t require the data to be sorted. It is best suited for unsorted, small, or dynamically changing datasets, where sorting overhead may not be justifiable.
+
+Binary Search
+Binary search is a much more efficient algorithm, but it only works on sorted data. It functions by dividing the list into halves and repeatedly narrowing the search range based on comparisons. If the target value is in the middle of the list, the best-case time complexity is O(1). Both average and worst-case complexities are O(log n), as each step cuts the remaining search space in half.
+
+Binary search significantly reduces the number of comparisons, making it ideal for large, sorted datasets.
+
+Application in E-Commerce Platforms
+Search speed is a critical factor in user experience on e-commerce websites, where users interact with large product catalogs and expect near-instant results.
+
+Why Binary Search is Preferable:
+- Performance at Scale
+Binary search offers logarithmic time performance, which becomes increasingly valuable as the number of products grows into the thousands or more. This ensures that search remains fast and responsive under heavy load.
+
+- Sorted Data is Commonplace
+Most e-commerce systems already maintain sorted data — by name, category, brand, or price. This makes them naturally compatible with binary search, especially for read-heavy systems where data isn’t frequently modified.
+
+- Resource Efficiency
+As binary search minimizes the number of operations, it consumes fewer CPU cycles and performs better across large datasets, ensuring backend scalability.
+
+- User Satisfaction
+Fast search results contribute to a seamless user experience. Reduced latency during searches can lead to higher engagement, lower bounce rates, and increased conversion.
+
+When to Prefer Linear Search
+Despite its inefficiency on large datasets, linear search has valid use cases:
+
+Small datasets where sorting is unnecessary
+
+Temporary or dynamically changing data (e.g., live suggestions, filters)
+
+One-time or quick searches in short lists

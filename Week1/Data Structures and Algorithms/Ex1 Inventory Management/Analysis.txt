@@ -1,0 +1,33 @@
+This inventory management system uses a HashMap<Integer, Product> to efficiently manage products by their productId. The primary operations supported are:
+
+1. Add Product
+Checks for product existence using containsKey()
+
+If not present, adds the product using put()
+
+2. Update Product
+Looks up product by productId and modifies its fields
+
+If not found, a message is shown
+
+3. Delete Product
+Removes the product using remove(productId)
+
+Checks existence and removes only if present
+
+4. Display Inventory
+Iterates over the values() of the HashMap to display all products
+
+Data Structure Used: HashMap
+Key: productId (Integer)
+
+Value: Product object
+
+Why: Provides fast lookup, update, and delete by key (O(1) average time)
+
+Advantages
+Efficient for large-scale data
+
+No need to scan all entries for updates/deletes
+
+Easily extendable for sorting, file operations, etc.
